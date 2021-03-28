@@ -18,7 +18,4 @@ jobs:
                   username: ${{ github.actor }}
                   password: ${{ secrets.GITHUB_TOKEN }}
                   registry: ghcr.io
-                  repository: rimmaciej/lean4
-                  tag_with_ref: true
-                  tag_with_sha: true
                   tags: ghcr.io/rimmaciej/lean4:latest
