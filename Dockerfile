@@ -1,6 +1,6 @@
 FROM ubuntu:focal
 
-RUN apt-get -qqy update && apt-get -qqy install curl
+RUN apt-get -qqy update && apt-get -qqy install curl git make
 
 # create lean user
 RUN useradd lean -m -U
