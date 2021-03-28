@@ -1,6 +1,7 @@
 FROM ubuntu:focal
+ARG DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get -qqy update && apt-get -qqy install curl git make
+RUN apt-get -qqy update && apt-get -qqy install curl git make libsecret-1-0
 
 # create lean user
 RUN useradd lean -m -U
